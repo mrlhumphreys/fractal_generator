@@ -1,0 +1,116 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+body {
+  font-family: "Seravek", "Helvetica", "sans-serif";
+  background-color: #202020;
+  color: #d0d0d0;
+}
+
+#wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 375px) {
+  #wrapper {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  #wrapper {
+    width: 940px;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+@media only screen and (min-width: 376px) {
+  #screen {
+    
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #screen {
+    height: 200px;
+  }
+}
+
+#parameters {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+#parameters label {
+  font-size: 2em;
+  width: 138px;
+}
+
+#parameters span {
+  font-size: 2em;
+}
+
+#parameters input[type=number] {
+  background-color: #404040;
+  color: #d0d0d0;
+  border: none;
+  font-size: 2em;
+  width: 138px;
+}
+
+#parameters input[type=submit] {
+  background-color: #0000b0;
+  color: #d0d0d0;
+  border: none;
+  font-size: 2em;
+  width: 138px;
+  height: 74px;
+}
+
+#parameters input[type=submit]:hover {
+  background-color: #d0d0d0;
+  color: #0000b0;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 376px) {
+  #parameters {
+    flex-direction: row;
+  }
+
+  #parameters fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #parameters {
+    flex-direction: column;
+  }
+
+  #parameters fieldset {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+  }  
+
+  #parameters #scale {
+    width: 318px;
+  }
+
+  #parameters #submit {
+    width: 318px;
+  }
+}
+
+
